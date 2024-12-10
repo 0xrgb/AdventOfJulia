@@ -43,7 +43,7 @@ $ julia --project bench/benchmark.jl 2024 1
 | [4](https://adventofcode.com/2024/day/4) | string | :star: | :star: |
 | [5](https://adventofcode.com/2024/day/5) | greedy | :star: | :star: |
 | [6](https://adventofcode.com/2024/day/6) | greedy | :star: | :poop: |
-| [7](https://adventofcode.com/2024/day/7) | ? | :x: | :x: |
+| [7](https://adventofcode.com/2024/day/7) | DP | :star: | :star: |
 | [8](https://adventofcode.com/2024/day/8) | ? | :x: | :x: |
 | [9](https://adventofcode.com/2024/day/9) | ? | :x: | :x: |
 | [10](https://adventofcode.com/2024/day/10) | ? | :x: | :x: |
