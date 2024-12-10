@@ -50,4 +50,4 @@ $ julia --project bench/benchmark.jl 2024 1
 
 ## Reference
 
-- [goggle/AdventOfCode2023.jl](https://github.com/goggle/AdventOfCode2022.jl): Nice project structure with proper module, tests and benchmarks.
+- [goggle/AdventOfCode2023.jl](https://github.com/goggle/AdventOfCode2023.jl): Nice project structure with proper module, tests and benchmarks.
