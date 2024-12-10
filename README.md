@@ -35,18 +35,18 @@ $ julia --project bench/benchmark.jl 2024 1
 
 ### 2024 (10/50)
 
-| Day | Type | Part 1 | Part 2 |
-|----:|------|:------:|:------:|
-| [1](https://adventofcode.com/2024/day/1) | adhoc | :star: | :star: |
-| [2](https://adventofcode.com/2024/day/2) | adhoc | :star: | :star: |
-| [3](https://adventofcode.com/2024/day/3) | parsing | :star: | :star: |
-| [4](https://adventofcode.com/2024/day/4) | string | :star: | :star: |
-| [5](https://adventofcode.com/2024/day/5) | greedy | :star: | :star: |
-| [6](https://adventofcode.com/2024/day/6) | greedy | :star: | :poop: |
-| [7](https://adventofcode.com/2024/day/7) | DP | :star: | :star: |
-| [8](https://adventofcode.com/2024/day/8) | ? | :x: | :x: |
-| [9](https://adventofcode.com/2024/day/9) | ? | :x: | :x: |
-| [10](https://adventofcode.com/2024/day/10) | ? | :x: | :x: |
+| Day | Code | Type | Part 1 | Part 2 |
+|----:|:----:|------|:------:|:------:|
+| [1](https://adventofcode.com/2024/day/1) | [day1.jl](src/2024/day1.jl) | adhoc | :star: | :star: |
+| [2](https://adventofcode.com/2024/day/2) | [day2.jl](src/2024/day2.jl) | adhoc | :star: | :star: |
+| [3](https://adventofcode.com/2024/day/3) | [day3.jl](src/2024/day3.jl) | parsing | :star: | :star: |
+| [4](https://adventofcode.com/2024/day/4) | [day4.jl](src/2024/day4.jl) | string | :star: | :star: |
+| [5](https://adventofcode.com/2024/day/5) | [day5.jl](src/2024/day5.jl) | greedy | :star: | :star: |
+| [6](https://adventofcode.com/2024/day/6) | [day6.jl](src/2024/day6.jl) | greedy | :star: | :poop: |
+| [7](https://adventofcode.com/2024/day/7) | [day7.jl](src/2024/day7.jl) | DP | :star: | :star: |
+| [8](https://adventofcode.com/2024/day/8) | :x: | ? | :x: | :x: |
+| [9](https://adventofcode.com/2024/day/9) | :x: | ? | :x: | :x: |
+| [10](https://adventofcode.com/2024/day/10) | :x: | ? | :x: | :x: |
 
 ## Reference
 
