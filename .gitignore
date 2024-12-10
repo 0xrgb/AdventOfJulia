@@ -1,0 +1,18 @@
+# macos
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# windows
+Thumbs.db
+[Dd]esktop.ini
+
+# julia
+Manifest.toml
+
+# vscode
+.vscode/
+
+# etc
+testdata.txt
