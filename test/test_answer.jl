@@ -35,7 +35,7 @@ function dotest(year::Integer, day::Integer; verbose::Bool=true)
         if success
             println("[+] $year Day $day: ok")
         else
-            println("[+] $year Day $day: expect $expect, got $got")
+            println("[-] $year Day $day: expect $expect, got $got")
         end
     end
     success
