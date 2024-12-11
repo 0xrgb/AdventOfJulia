@@ -42,7 +42,7 @@ $ julia --project bench/benchmark.jl 2024 1
 | [3](https://adventofcode.com/2024/day/3) | [day3.jl](src/2024/day3.jl) | parsing | :star: | :star: |
 | [4](https://adventofcode.com/2024/day/4) | [day4.jl](src/2024/day4.jl) | string | :star: | :star: |
 | [5](https://adventofcode.com/2024/day/5) | [day5.jl](src/2024/day5.jl) | greedy | :star: | :star: |
-| [6](https://adventofcode.com/2024/day/6) | [day6.jl](src/2024/day6.jl) | greedy | :star: | :poop: |
+| [6](https://adventofcode.com/2024/day/6) | [day6.jl](src/2024/day6.jl) | greedy | :star: | :star: |
 | [7](https://adventofcode.com/2024/day/7) | [day7.jl](src/2024/day7.jl) | DP | :star: | :star: |
 | [8](https://adventofcode.com/2024/day/8) | [day8.jl](src/2024/day8.jl) | math | :star: | :star: |
 | [9](https://adventofcode.com/2024/day/9) | :x: | ? | :x: | :x: |

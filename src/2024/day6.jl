@@ -1,17 +1,18 @@
-function find_startpos(s)
-    for (i, line) in pairs(s)
-        for (j, ch) in pairs(line)
-            if ch == '^' || ch == 'v' || ch == '<' || ch == '>'
-                return i, j
-            end
+include("../parser.jl")
+
+function find_startpos(s::Matrix{UInt8})
+    for idx in CartesianIndices(s)
+        ch = Char(s[idx])
+        if ch == '^' || ch == '>' || ch == '<' || ch == '>'
+            return idx
         end
     end
-    error("cannot find start position")
+    error("cannot find a start position")
 end
 
-function simulate(s, i::Int, j::Int)
-    ch = s[i][j]
-    dxy = if ch == '^'
+function simulate!(s::Matrix{UInt8}, check::Matrix{Bool}, idx::CartesianIndex{2})
+    ch = Char(s[idx])
+    dxy = CartesianIndex{2}(if ch == '^'
         (-1, 0)
     elseif ch == 'v'
         (1, 0)
@@ -19,49 +20,48 @@ function simulate(s, i::Int, j::Int)
         (0, -1)
     else
         (0, +1)
-    end
+    end)
 
-    maxwalk = 4 * length(s) * ncodeunits(s[1])
-    check = Set{Tuple{Int,Int}}()
-    push!(check, (i, j))
+    maxwalk = 4 * reduce(*, size(s))
+    check[idx] = true
     for _ in 1:maxwalk
-        ii, jj = (i, j) .+ dxy
-        if !(checkbounds(Bool, s, ii) && isvalid(s[ii], jj))
-            return length(check)
+        newidx = idx + dxy
+        if !checkbounds(Bool, s, newidx)
+            return sum(check)
         end
-        ch = s[ii][jj]
-        if ch == '#'
-            dxy = (dxy[2], -dxy[1])
+        if s[newidx] == 0x23  # '#'
+            dxy = CartesianIndex(dxy[2], -dxy[1])
             continue
         end
-        i, j = ii, jj
-        push!(check, (i, j))
+        idx = newidx
+        check[idx] = true
     end
     -1
 end
 
 function part1(input::String)
-    s = split(rstrip(input), "\n")
-    si, sj = find_startpos(s)
-    simulate(s, si, sj)
+    s = parse2d(input)
+    idx = find_startpos(s)
+    check = zeros(Bool, size(s))
+    simulate!(s, check, idx)
 end
 
 function part2(input::String)
-    s = split(rstrip(input), "\n")
-    si, sj = find_startpos(s)
+    s = parse2d(input)
+    startidx = find_startpos(s)
+    check = Matrix{Bool}(undef, size(s))
     result = 0
-    for (i, line) in pairs(s)
-        for (j, ch) in pairs(line)
-            if (i, j) == (si, sj)
-                continue
-            end
-            line2 = line[1:j-1] * "#" * line[j+1:end]
-            s[i] = line2
-            if simulate(s, si, sj) < 0
-                result += 1
-            end
-            s[i] = line
+    for idx in CartesianIndices(s)
+        if idx == startidx || s[idx] == 0x23  # '#'
+            continue
         end
+        ch = s[idx]
+        s[idx] = 0x23  # '#'
+        fill!(check, false)
+        if simulate!(s, check, startidx) < 0
+            result += 1
+        end
+        s[idx] = ch
     end
     result
 end
