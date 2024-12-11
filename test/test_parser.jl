@@ -28,3 +28,10 @@ end
         end
     end
 end
+
+@testset "test parse2d" begin
+    @test begin
+        s = parse2d("123\n가\nABC\n")
+        s == [0x31 0x32 0x33; 0xea 0xb0 0x80; 0x41 0x42 0x43]
+    end
+end

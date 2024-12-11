@@ -44,3 +44,13 @@ function readint!(parser::InputParser; type=Int)
     end
     parse(type, SubString(parser.s, start, prevind(parser.s, parser.offset)))
 end
+
+"""Parse `input` as 2D grid, return it as `Matrix{UInt8}`."""
+function parse2d(input::Union{String,SubString{String}})
+    input2 = split(rstrip(input), '\n')
+    s = Matrix{UInt8}(undef, length(input2), ncodeunits(input2[1]))
+    for (i, line) in pairs(input2)
+        s[i, :] = codeunits(line)
+    end
+    s
+end
