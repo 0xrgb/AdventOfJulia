@@ -49,6 +49,10 @@ $ julia --project bench/benchmark.jl 2024 1
 | [10](https://adventofcode.com/2024/day/10) | :x: | ? | :x: | :x: |
 | [11](https://adventofcode.com/2024/day/11) | :x: | ? | :x: | :x: |
 
-## Reference
+## See also
 
-- [goggle/AdventOfCode2023.jl](https://github.com/goggle/AdventOfCode2023.jl): Nice project structure with proper module, tests and benchmarks.
+- [goggle/AdventOfCode2023.jl](https://github.com/goggle/AdventOfCode2023.jl):
+  Well-organized project with proper modules, tests and benchmarks.
+  If you are familiar with C++, Java or Rust, this is a good starting point.
+- [GunnarFarneback/AdventOfCode.jl](https://github.com/GunnarFarneback/AdventOfCode.jl):
+  If you are a Python developer, `aoc.jl` is a good starting point.
