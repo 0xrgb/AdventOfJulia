@@ -33,7 +33,7 @@ $ julia --project bench/benchmark.jl 2024 1
 - Solved, but not a good solution (>1s): :poop:
 - Unsolved: :x:
 
-### 2024 (18/50)
+### 2024 (20/50)
 
 | Day | Code | Type | Part 1 | Part 2 |
 |----:|:----:|------|:------:|:------:|
@@ -46,7 +46,7 @@ $ julia --project bench/benchmark.jl 2024 1
 | [7](https://adventofcode.com/2024/day/7) | [day7.jl](src/2024/day7.jl) | DP | :star: | :star: |
 | [8](https://adventofcode.com/2024/day/8) | [day8.jl](src/2024/day8.jl) | math | :star: | :star: |
 | [9](https://adventofcode.com/2024/day/9) | [day9.jl](src/2024/day9.jl) | adhoc | :star: | :star: |
-| [10](https://adventofcode.com/2024/day/10) | :x: | ? | :x: | :x: |
+| [10](https://adventofcode.com/2024/day/10) | [day10.jl](src/2024/day10.jl) | search, DP | :star: | :star: |
 | [11](https://adventofcode.com/2024/day/11) | :x: | ? | :x: | :x: |
 
 ## See also
