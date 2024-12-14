@@ -48,6 +48,9 @@ $ julia --project bench/benchmark.jl 2024 1
 | [9](https://adventofcode.com/2024/day/9) | [day9.jl](src/2024/day9.jl) | adhoc | :star: | :star: |
 | [10](https://adventofcode.com/2024/day/10) | [day10.jl](src/2024/day10.jl) | search, DP | :star: | :star: |
 | [11](https://adventofcode.com/2024/day/11) | :x: | ? | :x: | :x: |
+| [12](https://adventofcode.com/2024/day/12) | :x: | ? | :x: | :x: |
+| [13](https://adventofcode.com/2024/day/13) | :x: | ? | :x: | :x: |
+| [14](https://adventofcode.com/2024/day/14) | :x: | ? | :x: | :x: |
 
 ## See also
 
