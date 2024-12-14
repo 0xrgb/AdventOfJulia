@@ -16,6 +16,7 @@ const ANSWER::Dict{Int,Vector{Tuple{Int,Int}}} = Dict(
         (392, 1235),                    # Day 8
         (6359213660505, 6381624803796), # Day 9
         (548, 1252),                    # Day 10
+        (233875, 277444936413293),      # Day 11
     ],
 )
 
