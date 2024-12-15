@@ -51,7 +51,7 @@ $ julia --project bench/benchmark.jl 2024 1
 | [12](https://adventofcode.com/2024/day/12) | :x: | ? | :x: | :x: |
 | [13](https://adventofcode.com/2024/day/13) | :x: | ? | :x: | :x: |
 | [14](https://adventofcode.com/2024/day/14) | :x: | ? | :x: | :x: |
-| [15](https://adventofcode.com/2024/day/14) | [day15.jl](src/2024/day15.jl) | adhoc | :star: | :star: |
+| [15](https://adventofcode.com/2024/day/15) | [day15.jl](src/2024/day15.jl) | adhoc | :star: | :star: |
 
 ## See also
 
