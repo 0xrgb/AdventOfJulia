@@ -1,10 +1,10 @@
 using BenchmarkTools
 
-if isdefined(@__MODULE__, :LanguageServer)
-    include("../util/filepath.jl")
-else
-    include(joinpath(@__DIR__, "..", "util", "filepath.jl"))
-end
+"""Return a solution filename for given `year` and `day`."""
+solution_filepath(year::Integer, day::Integer) = joinpath(@__DIR__, "..", "src", "$year", "day$day.jl")
+
+"""Return a input data filepath for given `year` and `day`."""
+inputdata_filepath(year::Integer, day::Integer) = joinpath(@__DIR__, "..", "data", "$year", "day$day.txt")
 
 function usage()
     println("usage:  julia --project bench/benchmark.jl <year> <day>")

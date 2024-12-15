@@ -19,9 +19,11 @@ $ vim 2024/src/day1.jl  # solve problem
 ...
 $ juila --project cli/run.jl 2024 1 part1
 1834060
-$ julia --project test/test_answer.jl 2024
-[+] 2024 Day 1: ok
-[+] test success
+$ julia --project test/runtests.jl
+Test Summary: | Pass  Total  Time
+parser        |    5      5  0.1s
+Test Summary: | Pass  Total  Time
+2024          |    2      2  0.1s
 $ julia --project bench/benchmark.jl 2024 1
 [=] 2024 Day 1 (part1): 234.600 μs, 648.77 KiB
 [=] 2024 Day 1 (part2): 280.600 μs, 762.70 KiB

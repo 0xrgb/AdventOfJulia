@@ -1,10 +1,6 @@
 using Downloads
 
-if isdefined(@__MODULE__, :LanguageServer)
-    include("../util/filepath.jl")
-else
-    include(joinpath(@__DIR__, "..", "util", "filepath.jl"))
-end
+include(joinpath(@__DIR__, "filepath.jl"))
 
 const SOLUTION_TEMPLATE = """
 function part1(input::String)

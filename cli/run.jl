@@ -1,8 +1,4 @@
-if isdefined(@__MODULE__, :LanguageServer)
-    include("../util/filepath.jl")
-else
-    include(joinpath(@__DIR__, "..", "util", "filepath.jl"))
-end
+include(joinpath(@__DIR__, "filepath.jl"))
 
 function usage()
     println("usage:  juila --project cli/run.jl <year> <day> (part1|part2) [<file>]")
